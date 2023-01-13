@@ -47,7 +47,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
     color: black;
     transition: .8s;
@@ -63,7 +62,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background: rgb(2,0,36);
     background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
     color: black;
     z-index: -1;
