@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    padding-top: 30px;
+}
+.navigation-bar{
+    width: 1300px ;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 0px 20px;
+    margin-bottom: 100px;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.nav-link, .logo{
+    position: relative;
+    text-decoration: none;
+    padding: 7px 7px;
+    color: white;
+}
+.nav-link:hover, .logo:hover{
+    color: rgb(99,93,210);
+}
+.nav-link::before, .logo::before
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
+    color: black;
+    z-index: -1;
+    transition: .8s;
+}
+.nav-link:hover::before, .logo:hover::before{
+    width: 100%;
+}
+.nav-link::after, .logo::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
+    color: black;
+    z-index: -1;
+    transition: .8s;
+}
+.nav-link:hover::after, .logo:hover::after{
+    width: 100%;
+}
+
+.bars{
+    display: none;
+}
+.footer-nav{
+    display: none;
+}
+.footer-copyright{
+    color: white;
+    text-align: center;
+    border-top: 2px solid white;
+    padding: 20px;
+}
+@media screen and (max-width: 499px){
+    .navigation-bar{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .navigation{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .bar{
+        color: white;
+    }
+    .footer-nav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 50px;
+        border-top: 2px solid white;
+        padding: 20px 5px;
+    }
+    .ft-nav-link{
+        color: white;
+        text-decoration: none;
+    }
+}
