@@ -89,6 +89,8 @@
     .navigation-bar{
         width: 100%;
         margin-bottom: 60px;
+        padding: 0px;
+        flex-wrap: wrap;
     }
     .navigation{
         display: none;
