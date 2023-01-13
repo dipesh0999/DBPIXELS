@@ -37,6 +37,7 @@
 }
 .nav-link:hover, .logo:hover{
     color: rgb(99,93,210);
+    transition: 1s;
 }
 .nav-link::before, .logo::before
 {
