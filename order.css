@@ -17,9 +17,13 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 25px;
+    position: relative;
 }
 .centerGif{
-    width: 300px;
+    width: 200px;
+}
+.gif{
+    width: 200px;
 }
 .text{
     text-align: center;
@@ -38,11 +42,37 @@ body{
     text-decoration: solid;
     background-position: right center;
 }
+.lord-icon{
+    width:250px;
+    height:250px;
+    position: absolute;
+    left: -150px;
+}
+.lord-icon-right{
+    width:250px;
+    height:250px;
+    position: absolute;
+    right: -200px;
+    transform: rotatey(180deg);
+}
+
 @media screen and (max-width: 499px) {
     body{
         padding: 100px 20px;
     }
-    img{
-        width: 100%;
+    .centerGif, .gif{
+        width: 150px;
+    }
+    .lord-icon{
+        width: 150px;
+        height: 150px;
+        left: -40px;
+        top: 30px;
+    }
+    .lord-icon-right{
+        width: 150px;
+        height: 150px;
+        right: -40px;
+        top: 30px;
     }
 }
