@@ -110,6 +110,7 @@
         left: -100%;
         transition: all .9s;
         padding-top: 50px;
+        border-radius: 20px;
     }
     .navigation .nav .nav-link{
         font-size: 23px;
