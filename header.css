@@ -115,6 +115,7 @@
     }
     .navigation .nav .nav-link{
         font-size: 20px;
+        font-weight: bold;
     }
     #check:checked ~ .navigation{
         left: 0;
